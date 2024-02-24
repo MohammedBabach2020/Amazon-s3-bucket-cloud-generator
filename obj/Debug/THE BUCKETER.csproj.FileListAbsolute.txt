@@ -1,0 +1,123 @@
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\Interop.WMPLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\Interop.MSVidCtlLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.ResolveComReference.cache
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.Form1.resources
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.launcher.resources
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.usingApi.resources
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.GenerateResource.cache
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.exe.config
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.exe
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.pdb
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Buffers.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Drawing.Common.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Memory.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.AccessControl.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Permissions.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\WebDriver.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.pdb
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.pdb
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Buffers.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Drawing.Common.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Memory.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.AccessControl.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Permissions.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\Interop.MSVidCtlLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.Properties.Resources.resources
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.CoreCompileInputs.cache
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.CopyComplete
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.exe
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.pdb
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.choices.resources
+C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\bin\Debug\Interop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.exe.config
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.exe
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\THE BUCKETER.pdb
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\Newtonsoft.Json.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Buffers.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Drawing.Common.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Memory.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.AccessControl.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Permissions.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\WebDriver.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.pdb
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.Core.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.pdb
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AWSSDK.S3.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\Newtonsoft.Json.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Buffers.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Data.SQLite.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Drawing.Common.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Memory.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.AccessControl.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Permissions.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\Interop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\Interop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.AssemblyReference.cache
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\Interop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\Interop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.ResolveComReference.cache
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.choices.resources
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.Form1.resources
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.launcher.resources
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.Properties.Resources.resources
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE_BUCKETER.usingApi.resources
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.GenerateResource.cache
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.CoreCompileInputs.cache
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCK.027780AA.Up2Date
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.exe
+C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Debug\THE BUCKETER.pdb
