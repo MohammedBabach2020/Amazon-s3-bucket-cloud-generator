@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Security.Principal;
@@ -19,6 +20,7 @@ namespace THE_BUCKETER
             InitializeComponent();
         }
         Thread th1;
+        Thread th2;
         static string GetSessionUsername()
         {
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
@@ -27,9 +29,10 @@ namespace THE_BUCKETER
         private void launcher_Load(object sender, EventArgs e)
         {
 
-              th1 = new Thread(changeThe_B_Location);
+
+            th1 = new Thread(changeThe_B_Location);
             pictureBox1.Location = new Point(pictureBox1.Location.X, -217);
-            Thread th2 = new Thread(changeThe_smile_Location);
+            th2 = new Thread(changeThe_smile_Location);
             th2.Start();
 
             if (!th2.IsAlive)
@@ -127,6 +130,36 @@ namespace THE_BUCKETER
             choices ch = new choices();
             ch.Show();
 
+
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                if (th1.IsAlive)
+                {
+                    th1.Abort();
+
+                }
+                if (th2.IsAlive)
+                {
+                    th2.Abort();
+
+                }
+                Application.Exit();
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+         
+
+           
 
         }
     }

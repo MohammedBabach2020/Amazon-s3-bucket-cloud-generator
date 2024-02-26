@@ -39,6 +39,7 @@ namespace THE_BUCKETER
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.updatedCount = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -83,7 +84,6 @@ namespace THE_BUCKETER
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.UpdateCount = new System.Windows.Forms.Timer(this.components);
-            this.updatedCount = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bucketsList)).BeginInit();
@@ -165,6 +165,17 @@ namespace THE_BUCKETER
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1311, 525);
             this.panel1.TabIndex = 8;
+            // 
+            // updatedCount
+            // 
+            this.updatedCount.AutoSize = true;
+            this.updatedCount.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatedCount.ForeColor = System.Drawing.Color.White;
+            this.updatedCount.Location = new System.Drawing.Point(14, 471);
+            this.updatedCount.Name = "updatedCount";
+            this.updatedCount.Size = new System.Drawing.Size(209, 19);
+            this.updatedCount.TabIndex = 84;
+            this.updatedCount.Text = "Current buckets count =  0";
             // 
             // label10
             // 
@@ -663,19 +674,9 @@ namespace THE_BUCKETER
             // 
             // UpdateCount
             // 
-            this.UpdateCount.Interval = 5000;
+            this.UpdateCount.Enabled = true;
+            this.UpdateCount.Interval = 10000;
             this.UpdateCount.Tick += new System.EventHandler(this.UpdateCount_Tick);
-            // 
-            // updatedCount
-            // 
-            this.updatedCount.AutoSize = true;
-            this.updatedCount.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatedCount.ForeColor = System.Drawing.Color.White;
-            this.updatedCount.Location = new System.Drawing.Point(14, 471);
-            this.updatedCount.Name = "updatedCount";
-            this.updatedCount.Size = new System.Drawing.Size(209, 19);
-            this.updatedCount.TabIndex = 84;
-            this.updatedCount.Text = "Current buckets count =  0";
             // 
             // usingApi
             // 

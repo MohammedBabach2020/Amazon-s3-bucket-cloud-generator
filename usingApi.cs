@@ -223,6 +223,7 @@ namespace THE_BUCKETER
             }
                 catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
 
                 Invoke(new Action(() =>
                 {
@@ -234,6 +235,8 @@ namespace THE_BUCKETER
                 }));
 
             }
+
+            _UpdateCount();
 
         }
 
@@ -390,7 +393,13 @@ namespace THE_BUCKETER
                     }
                 }
 
+
+
+                _UpdateCount();
+
+                // seting timer to update count each hour
                 UpdateCount.Start();
+                UpdateCount.Interval = 3600 * 100;
 
             }
             catch (Exception ex)
@@ -467,9 +476,9 @@ namespace THE_BUCKETER
 
             }
 
-       
-    
 
+
+            _UpdateCount();
             Invoke(new Action(() =>
             {
         
@@ -483,6 +492,7 @@ namespace THE_BUCKETER
 
 
             t = 0;
+      
 
         }
 
@@ -674,13 +684,15 @@ namespace THE_BUCKETER
             backToolStripMenuItem.Enabled = false;
         }
 
-       async private void UpdateCount_Tick(object sender, EventArgs e)
+
+
+        async private void _UpdateCount()
         {
             string proxyHost = proxy.Text;
             int proxyPort = Convert.ToInt32(port.Text);
 
 
-            if (proxyHost != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text!= "")
+            if (proxyHost != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text != "")
             {
                 try
                 {
@@ -694,15 +706,24 @@ namespace THE_BUCKETER
                     var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
                     var bucketsList = await s3Client.ListBucketsAsync();
 
-                    updatedCount.Text = "Current buckets count = " + bucketsList.Buckets.Count.ToString();
+                    Invoke(new Action(() =>
+                    {
+                        updatedCount.Text = "Current buckets count = " + bucketsList.Buckets.Count.ToString();
+                    }));
+                  
                 }
-            catch { 
-                }
-              
-            }
-       
-          
+                catch (Exception ex)
+                {
 
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+       async private void UpdateCount_Tick(object sender, EventArgs e)
+        {
+
+
+            _UpdateCount();
 
         }
     }
