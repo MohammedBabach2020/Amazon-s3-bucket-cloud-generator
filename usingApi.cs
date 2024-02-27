@@ -11,6 +11,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,22 @@ namespace THE_BUCKETER
         private int len = 0;
         private string region ="";
      private string connectionString = @"Data Source=" + Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + @"\database.db;Version=3;providerName=System.Data.SqlClient";
-    // private string connectionString = @"Data Source=C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\database.db;Version=3;providerName=System.Data.SqlClient";
+        // private string connectionString = @"Data Source=C:\Users\dev_team\source\repos\THE BUCKETER\THE BUCKETER\database.db;Version=3;providerName=System.Data.SqlClient";
+
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private static extern void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private static extern void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        private static extern IntPtr SendMessageKey(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
+
+        private const uint WM_SETTEXT = 0x000C;
+
+
+
         public usingApi()
         {
             InitializeComponent();
@@ -333,22 +349,30 @@ namespace THE_BUCKETER
             }
         }
 
-        private void usingApi_Load(object sender, EventArgs e)
-        {
+
+        private void onLoadThreathments() {
             try
             {
-
-                bucketsList.Columns[0].Width = (65 * bucketsList.Width) / 100;
-                bucketsList.Columns[1].Width = (15 * bucketsList.Width) / 100;
-                bucketsList.Columns[2].Width = (20 * bucketsList.Width) / 100;
-
-                var EnumerableAllRegions = RegionEndpoint.EnumerableAllRegions;
-                var regionsList = EnumerableAllRegions.ToList();
-
-                for (int i = 0; i< regionsList.Count;i++)
+                Invoke(new Action(() =>
                 {
-                    comboBox1.Items.Add(regionsList[i].SystemName);
+                    bucketsList.Columns[0].Width = (65 * bucketsList.Width) / 100;
+                    bucketsList.Columns[1].Width = (15 * bucketsList.Width) / 100;
+                    bucketsList.Columns[2].Width = (20 * bucketsList.Width) / 100;
+                }));
+
+
+
+                var EnumerableAllRegions =   RegionEndpoint.EnumerableAllRegions;
+                var regionsList =  EnumerableAllRegions.ToList();
+
+                for (int i = 0; i < regionsList.Count; i++)
+                {
+                    Invoke(new Action(() =>
+                    {
+                        comboBox1.Items.Add(regionsList[i].SystemName);
+                    }));
                 }
+
 
                 SQLiteConnection conn = new SQLiteConnection(connectionString);
                 SQLiteDataAdapter adpt = new SQLiteDataAdapter("select * from credentials", conn);
@@ -356,56 +380,94 @@ namespace THE_BUCKETER
                 adpt.Fill(tbl);
                 if (tbl.Rows.Count > 0)
                 {
-                    accessKeyText.Text = tbl.Rows[0].ItemArray[3].ToString();
-                    prvKeyText.Text = tbl.Rows[0].ItemArray[4].ToString();
+
+                     Invoke(new Action(() =>
+                        {
+                            accessKeyText.Text = tbl.Rows[0].ItemArray[3].ToString();
+                            prvKeyText.Text = tbl.Rows[0].ItemArray[4].ToString();
+                        }));
+                    
+                  
                 }
 
-
-
-                 conn = new SQLiteConnection(connectionString);
-                 adpt = new SQLiteDataAdapter("select * from parameters", conn);
-                 tbl = new DataTable();
+                conn = new SQLiteConnection(connectionString);
+                adpt = new SQLiteDataAdapter("select * from parameters", conn);
+                tbl = new DataTable();
                 adpt.Fill(tbl);
 
                 if (tbl.Rows.Count > 0)
                 {
-                    proxy.Text = tbl.Rows[0].ItemArray[0].ToString();
-                    port.Text = tbl.Rows[0].ItemArray[1].ToString();
-                    nchars.Text = tbl.Rows[0].ItemArray[2].ToString();
-                    nBuckets.Text = tbl.Rows[0].ItemArray[3].ToString();
-                    comboBox1.SelectedItem = tbl.Rows[0].ItemArray[4].ToString();
+
+              
+
+                        Invoke(new Action(() =>
+                        {
+                            proxy.Text = tbl.Rows[0].ItemArray[0].ToString();
+                            port.Text = tbl.Rows[0].ItemArray[1].ToString();
+                            nchars.Text = tbl.Rows[0].ItemArray[2].ToString();
+                            nBuckets.Text = tbl.Rows[0].ItemArray[3].ToString();
+                            comboBox1.Text = tbl.Rows[0].ItemArray[4].ToString();
+                        }));
+                    
+
                 }
+
+
+       
+
 
                 adpt = new SQLiteDataAdapter("select * from buckets", conn);
                 tbl = new DataTable();
                 adpt.Fill(tbl);
-
+            
                 for (int i = 0; i < tbl.Rows.Count; i++)
                 {
-                    string[] row = { tbl.Rows[i].ItemArray[0].ToString() , "Copy" ,"Copy & Drop" };
-                    bucketsList.Rows.Add(row);
-
-                    if(tbl.Rows[i].ItemArray[1].ToString() == "1")
+                    string[] row = { tbl.Rows[i].ItemArray[0].ToString(), "Copy", "Copy & Drop" };
+                    Invoke(new Action(() =>
                     {
-                        bucketsList.Rows[i].Cells[0].Style.BackColor = Color.Gray;
+                        bucketsList.Rows.Add(row);
+                    }));
+
+                    if (tbl.Rows[i].ItemArray[1].ToString() == "1")
+                    {
+                        Invoke(new Action(() =>
+                        {
+                            bucketsList.Rows[i].Cells[0].Style.BackColor = Color.Gray;
                         bucketsList.Rows[i].Cells[0].Style.SelectionBackColor = Color.Gray;
+                        }));
 
                     }
+
                 }
 
 
 
                 _UpdateCount();
-
-                // seting timer to update count each hour
-                UpdateCount.Start();
+             
+                Invoke(new Action(() =>
+                {
+                    // seting timer to update count each hour
+                    UpdateCount.Start();
                 UpdateCount.Interval = 3600 * 100;
+                }));
+
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+
+        private void usingApi_Load(object sender, EventArgs e)
+        {
+
+            Thread onLoad = new Thread(onLoadThreathments);
+            onLoad.Start();
+
+
+
         }
 
     
@@ -433,39 +495,40 @@ namespace THE_BUCKETER
 
             ListBucketsResponse listBuckets = await s3Client.ListBucketsAsync();
 
-            // Limit the result to the first 100 buckets
-            var first100Buckets = listBuckets.Buckets.ToList();
+            // order the buckets by date
+            List<S3Bucket> sortListByDate = listBuckets.Buckets.OrderBy(obj=>obj.CreationDate).ToList();
 
 
+            sortListByDate.Reverse();
 
-            int i = 0;
 
-            foreach (var bucket in first100Buckets)
+            var i = 0;
+            foreach (var bucket in sortListByDate)
             {
-                Console.WriteLine(bucket.BucketName);
+
 
                 if (i < howmuch)
                 {
 
-                  
-                        // Delete all objects in the bucket (empty the bucket first)
-                        await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
 
-                        // Delete the empty bucket
-                        var deleteBucketRequest = new DeleteBucketRequest
-                        {
-                            BucketName = bucket.BucketName
-                        };
+                    // Delete all objects in the bucket (empty the bucket first)
+                    await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
 
-                        await s3Client.DeleteBucketAsync(deleteBucketRequest);
+                    // Delete the empty bucket
+                    var deleteBucketRequest = new DeleteBucketRequest
+                    {
+                        BucketName = bucket.BucketName
+                    };
 
-                        Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
-                            Invoke(new Action(() =>
-                            {
-                                progressBar1.Value++;
-                            }));
+                    await s3Client.DeleteBucketAsync(deleteBucketRequest);
 
-                   
+                    Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
+                    Invoke(new Action(() =>
+                    {
+                        progressBar1.Value++;
+                    }));
+
+
 
                     i++;
                 }
@@ -484,7 +547,7 @@ namespace THE_BUCKETER
         
                 progressBar1.Value = 0;
                 progressBar1.Visible = false;
-                backToolStripMenuItem.Enabled = true;
+              
                 MessageBox.Show(howmuch.ToString() + " buckets deletd");
                 timer1.Stop();
                 label6.Text = "";
@@ -509,7 +572,7 @@ namespace THE_BUCKETER
             Thread th = new Thread(() => { deleteBuckets(200); });
             th.Start();
             timer1.Start();
-            backToolStripMenuItem.Enabled = false;
+            
         }
 
         private void bucketsList_CellClick_1(object sender, DataGridViewCellEventArgs e)
@@ -600,6 +663,7 @@ namespace THE_BUCKETER
                         }
                         conn.Close();
                     }
+                    _UpdateCount();
                 }
             }
             catch (Exception ex)
@@ -654,9 +718,7 @@ namespace THE_BUCKETER
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            choices ch = new choices();
-            ch.Show();
+         
         }
 
         private void usingApi_FormClosed(object sender, FormClosedEventArgs e)
@@ -671,7 +733,7 @@ namespace THE_BUCKETER
             Thread th = new Thread(() => { deleteBuckets(100); });
             th.Start();
             timer1.Start();
-            backToolStripMenuItem.Enabled = false;
+          
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -681,19 +743,20 @@ namespace THE_BUCKETER
             Thread th = new Thread(() => { deleteBuckets(200); });
             th.Start();
             timer1.Start();
-            backToolStripMenuItem.Enabled = false;
+         
         }
 
 
 
         async private void _UpdateCount()
         {
-            string proxyHost = proxy.Text;
-            int proxyPort = Convert.ToInt32(port.Text);
 
-
-            if (proxyHost != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text != "")
+            if (proxy.Text != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text != "")
             {
+
+                string proxyHost = proxy.Text;
+                int proxyPort = Convert.ToInt32(port.Text);
+
                 try
                 {
                     var s3Config = new AmazonS3Config
@@ -725,6 +788,70 @@ namespace THE_BUCKETER
 
             _UpdateCount();
 
+        }
+
+        private void settingsToolStripMenuItem_DropDownOpened(object sender, EventArgs e)
+        {
+            settingsToolStripMenuItem.ForeColor = Color.FromArgb(47, 50, 65);
+        }
+
+        private void settingsToolStripMenuItem_DropDownClosed(object sender, EventArgs e)
+        {
+            settingsToolStripMenuItem.ForeColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void toolStripMenuItem1_DropDownOpened(object sender, EventArgs e)
+        {
+            toolStripMenuItem1.ForeColor = Color.FromArgb(47, 50, 65);
+
+        }
+
+        private void toolStripMenuItem1_DropDownClosed(object sender, EventArgs e)
+        {
+            toolStripMenuItem1.ForeColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimizeBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This app has been made by Mohammed Babach - DMS\n Digital Marketing Strategies.");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void menuStrip1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void bucketsList_MouseDown(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }

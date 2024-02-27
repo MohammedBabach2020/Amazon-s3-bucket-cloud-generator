@@ -19,7 +19,7 @@ namespace THE_BUCKETER.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,36 +63,6 @@ namespace THE_BUCKETER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1586320 {
-            get {
-                object obj = ResourceManager.GetObject("1586320", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap B_1 {
-            get {
-                object obj = ResourceManager.GetObject("B-1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ezgif_com_gif_maker__6_ {
-            get {
-                object obj = ResourceManager.GetObject("ezgif.com-gif-maker (6)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap The_Bucketer {
             get {
                 object obj = ResourceManager.GetObject("The Bucketer", resourceCulture);
@@ -103,19 +73,9 @@ namespace THE_BUCKETER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap The_Bucketer1 {
+        internal static System.Drawing.Bitmap The_Bucketer__1_ {
             get {
-                object obj = ResourceManager.GetObject("The Bucketer1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Union {
-            get {
-                object obj = ResourceManager.GetObject("Union", resourceCulture);
+                object obj = ResourceManager.GetObject("The Bucketer (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

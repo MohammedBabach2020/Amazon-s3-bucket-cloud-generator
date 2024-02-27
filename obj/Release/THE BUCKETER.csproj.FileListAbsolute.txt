@@ -122,3 +122,63 @@ C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Release\THE BUCKETER.cspro
 C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Release\THE BUCK.027780AA.Up2Date
 C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Release\THE BUCKETER.exe
 C:\Users\babach\Desktop\THE BUCKETER\THE BUCKETER\obj\Release\THE BUCKETER.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\selenium-manager\linux\selenium-manager
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\selenium-manager\macos\selenium-manager
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\selenium-manager\windows\selenium-manager.exe
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\THE BUCKETER.exe.config
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\THE BUCKETER.exe
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\THE BUCKETER.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.Core.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.S3.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\EntityFramework.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\Newtonsoft.Json.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\SQLitePCLRaw.core.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Buffers.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Data.SQLite.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Drawing.Common.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Memory.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Numerics.Vectors.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.AccessControl.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.Permissions.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\WebDriver.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.Core.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.Core.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.S3.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AWSSDK.S3.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\EntityFramework.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\Newtonsoft.Json.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Buffers.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Data.SQLite.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Drawing.Common.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Memory.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Numerics.Vectors.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.AccessControl.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.Permissions.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AxInterop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\AxInterop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.csproj.AssemblyReference.cache
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\Interop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\Interop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\AxInterop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\AxInterop.WMPLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.csproj.ResolveComReference.cache
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE_BUCKETER.launcher.resources
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE_BUCKETER.Properties.Resources.resources
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE_BUCKETER.usingApi.resources
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.csproj.GenerateResource.cache
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.csproj.CoreCompileInputs.cache
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCK.027780AA.Up2Date
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.exe
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Release\THE BUCKETER.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\Interop.MSVidCtlLib.dll
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Release\Interop.WMPLib.dll

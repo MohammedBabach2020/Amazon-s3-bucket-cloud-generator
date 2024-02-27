@@ -31,6 +31,7 @@ namespace THE_BUCKETER
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,6 +40,8 @@ namespace THE_BUCKETER
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.minimizeBtn = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.updatedCount = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -71,9 +74,6 @@ namespace THE_BUCKETER
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.theOldest100ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.theOldest200ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -96,39 +96,43 @@ namespace THE_BUCKETER
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(518, 444);
+            this.button1.Location = new System.Drawing.Point(520, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(352, 444);
+            this.button2.Location = new System.Drawing.Point(354, 455);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 40);
             this.button2.TabIndex = 6;
             this.button2.Text = "Files";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+            this.panel1.Controls.Add(this.minimizeBtn);
+            this.panel1.Controls.Add(this.closeBtn);
             this.panel1.Controls.Add(this.updatedCount);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.button5);
@@ -161,10 +165,44 @@ namespace THE_BUCKETER
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1311, 525);
             this.panel1.TabIndex = 8;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimizeBtn.ForeColor = System.Drawing.Color.White;
+            this.minimizeBtn.Location = new System.Drawing.Point(1215, 1);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(45, 48);
+            this.minimizeBtn.TabIndex = 86;
+            this.minimizeBtn.Text = "-";
+            this.minimizeBtn.UseVisualStyleBackColor = true;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.closeBtn.FlatAppearance.BorderSize = 0;
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeBtn.ForeColor = System.Drawing.Color.White;
+            this.closeBtn.Location = new System.Drawing.Point(1266, -1);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(45, 48);
+            this.closeBtn.TabIndex = 85;
+            this.closeBtn.Text = "X";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // updatedCount
             // 
@@ -180,7 +218,7 @@ namespace THE_BUCKETER
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(1039, 129);
@@ -229,12 +267,12 @@ namespace THE_BUCKETER
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.panel8.Controls.Add(this.bucketsList);
-            this.panel8.Location = new System.Drawing.Point(352, 15);
+            this.panel8.Location = new System.Drawing.Point(352, 50);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(2);
-            this.panel8.Size = new System.Drawing.Size(653, 423);
+            this.panel8.Size = new System.Drawing.Size(653, 397);
             this.panel8.TabIndex = 79;
             // 
             // bucketsList
@@ -244,14 +282,13 @@ namespace THE_BUCKETER
             this.bucketsList.AllowUserToResizeColumns = false;
             this.bucketsList.AllowUserToResizeRows = false;
             this.bucketsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bucketsList.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.bucketsList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.bucketsList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bucketsList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bucketsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -262,28 +299,37 @@ namespace THE_BUCKETER
             this.copy,
             this.copdrop});
             this.bucketsList.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bucketsList.DefaultCellStyle = dataGridViewCellStyle5;
             this.bucketsList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bucketsList.EnableHeadersVisualStyles = false;
-            this.bucketsList.GridColor = System.Drawing.Color.White;
+            this.bucketsList.GridColor = System.Drawing.Color.WhiteSmoke;
             this.bucketsList.Location = new System.Drawing.Point(2, 2);
             this.bucketsList.Name = "bucketsList";
             this.bucketsList.RowHeadersVisible = false;
             this.bucketsList.RowTemplate.DividerHeight = 2;
             this.bucketsList.RowTemplate.Height = 35;
             this.bucketsList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.bucketsList.Size = new System.Drawing.Size(649, 419);
+            this.bucketsList.Size = new System.Drawing.Size(649, 393);
             this.bucketsList.TabIndex = 68;
             this.bucketsList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bucketsList_CellClick_1);
             this.bucketsList.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.bucketsList_DefaultValuesNeeded);
+            this.bucketsList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bucketsList_MouseDown);
             // 
             // Bucket
             // 
             this.Bucket.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(141)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.Bucket.DefaultCellStyle = dataGridViewCellStyle2;
             this.Bucket.FillWeight = 118.7817F;
             this.Bucket.HeaderText = "Bucket";
@@ -292,11 +338,11 @@ namespace THE_BUCKETER
             // copy
             // 
             this.copy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(141)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.copy.DefaultCellStyle = dataGridViewCellStyle3;
             this.copy.FillWeight = 81.21828F;
             this.copy.HeaderText = "Copy";
@@ -308,11 +354,11 @@ namespace THE_BUCKETER
             // 
             // copdrop
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(141)))), ((int)(((byte)(16)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.copdrop.DefaultCellStyle = dataGridViewCellStyle4;
             this.copdrop.HeaderText = "copy & drop";
             this.copdrop.Name = "copdrop";
@@ -339,7 +385,7 @@ namespace THE_BUCKETER
             // 
             // accessKeyText
             // 
-            this.accessKeyText.BackColor = System.Drawing.Color.DodgerBlue;
+            this.accessKeyText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.accessKeyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.accessKeyText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accessKeyText.ForeColor = System.Drawing.Color.White;
@@ -350,7 +396,7 @@ namespace THE_BUCKETER
             // 
             // prvKeyText
             // 
-            this.prvKeyText.BackColor = System.Drawing.Color.DodgerBlue;
+            this.prvKeyText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.prvKeyText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.prvKeyText.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prvKeyText.ForeColor = System.Drawing.Color.White;
@@ -380,7 +426,7 @@ namespace THE_BUCKETER
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.comboBox1.ForeColor = System.Drawing.Color.White;
@@ -405,18 +451,19 @@ namespace THE_BUCKETER
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button4.FlatAppearance.BorderSize = 2;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(845, 444);
+            this.button4.Location = new System.Drawing.Point(847, 455);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(160, 40);
             this.button4.TabIndex = 69;
             this.button4.Text = "Clear all";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label3
@@ -440,7 +487,7 @@ namespace THE_BUCKETER
             // 
             // port
             // 
-            this.port.BackColor = System.Drawing.Color.DodgerBlue;
+            this.port.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.port.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.port.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.port.ForeColor = System.Drawing.Color.White;
@@ -470,7 +517,7 @@ namespace THE_BUCKETER
             // 
             // proxy
             // 
-            this.proxy.BackColor = System.Drawing.Color.DodgerBlue;
+            this.proxy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.proxy.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.proxy.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proxy.ForeColor = System.Drawing.Color.White;
@@ -481,16 +528,17 @@ namespace THE_BUCKETER
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.settingsToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.backToolStripMenuItem});
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1311, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1311, 47);
             this.menuStrip1.TabIndex = 61;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             // 
             // settingsToolStripMenuItem
             // 
@@ -499,18 +547,21 @@ namespace THE_BUCKETER
             this.updtaeParamsToolStripMenuItem,
             this.updateCrendtialsToolStripMenuItem});
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.settingsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.settingsToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.DodgerBlue;
+            this.settingsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.settingsToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(72, 25);
+            this.settingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(72, 43);
             this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.DropDownClosed += new System.EventHandler(this.settingsToolStripMenuItem_DropDownClosed);
+            this.settingsToolStripMenuItem.DropDownOpened += new System.EventHandler(this.settingsToolStripMenuItem_DropDownOpened);
             // 
             // updtaeParamsToolStripMenuItem
             // 
             this.updtaeParamsToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.updtaeParamsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.updtaeParamsToolStripMenuItem.Name = "updtaeParamsToolStripMenuItem";
-            this.updtaeParamsToolStripMenuItem.Size = new System.Drawing.Size(196, 24);
+            this.updtaeParamsToolStripMenuItem.Size = new System.Drawing.Size(197, 24);
             this.updtaeParamsToolStripMenuItem.Text = "Update parameters";
             this.updtaeParamsToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.updtaeParamsToolStripMenuItem.Click += new System.EventHandler(this.updtaeParamsToolStripMenuItem_Click);
@@ -520,21 +571,27 @@ namespace THE_BUCKETER
             this.updateCrendtialsToolStripMenuItem.BackColor = System.Drawing.Color.White;
             this.updateCrendtialsToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.updateCrendtialsToolStripMenuItem.Name = "updateCrendtialsToolStripMenuItem";
-            this.updateCrendtialsToolStripMenuItem.Size = new System.Drawing.Size(196, 24);
-            this.updateCrendtialsToolStripMenuItem.Text = "Update Crendtials";
+            this.updateCrendtialsToolStripMenuItem.Size = new System.Drawing.Size(197, 24);
+            this.updateCrendtialsToolStripMenuItem.Text = "Update Credentials";
             this.updateCrendtialsToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.updateCrendtialsToolStripMenuItem.Click += new System.EventHandler(this.updateCrendtialsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
+            this.toolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Black;
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 25);
+            this.toolStripMenuItem1.ShortcutKeyDisplayString = "Ctrl+D";
+            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(113, 43);
             this.toolStripMenuItem1.Text = "Delete buckets";
+            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.Overlay;
+            this.toolStripMenuItem1.DropDownClosed += new System.EventHandler(this.toolStripMenuItem1_DropDownClosed);
+            this.toolStripMenuItem1.DropDownOpened += new System.EventHandler(this.toolStripMenuItem1_DropDownOpened);
             // 
             // toolStripMenuItem2
             // 
@@ -552,40 +609,12 @@ namespace THE_BUCKETER
             this.toolStripMenuItem3.Text = "The oldest 200";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
-            // backToolStripMenuItem
-            // 
-            this.backToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.theOldest100ToolStripMenuItem,
-            this.theOldest200ToolStripMenuItem});
-            this.backToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.backToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
-            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(56, 25);
-            this.backToolStripMenuItem.Text = "Back";
-            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
-            // 
-            // theOldest100ToolStripMenuItem
-            // 
-            this.theOldest100ToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.theOldest100ToolStripMenuItem.Name = "theOldest100ToolStripMenuItem";
-            this.theOldest100ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
-            this.theOldest100ToolStripMenuItem.Text = "The oldest 100";
-            this.theOldest100ToolStripMenuItem.Click += new System.EventHandler(this.theOldest100ToolStripMenuItem_Click);
-            // 
-            // theOldest200ToolStripMenuItem
-            // 
-            this.theOldest200ToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.theOldest200ToolStripMenuItem.Name = "theOldest200ToolStripMenuItem";
-            this.theOldest200ToolStripMenuItem.Size = new System.Drawing.Size(188, 26);
-            this.theOldest200ToolStripMenuItem.Text = "The oldest 200";
-            this.theOldest200ToolStripMenuItem.Click += new System.EventHandler(this.theOldest200ToolStripMenuItem_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(349, 492);
+            this.label9.Location = new System.Drawing.Point(358, 498);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 59;
@@ -612,7 +641,7 @@ namespace THE_BUCKETER
             // 
             // nBuckets
             // 
-            this.nBuckets.BackColor = System.Drawing.Color.DodgerBlue;
+            this.nBuckets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.nBuckets.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nBuckets.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nBuckets.ForeColor = System.Drawing.Color.White;
@@ -642,7 +671,7 @@ namespace THE_BUCKETER
             // 
             // nchars
             // 
-            this.nchars.BackColor = System.Drawing.Color.DodgerBlue;
+            this.nchars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.nchars.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nchars.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nchars.ForeColor = System.Drawing.Color.White;
@@ -653,18 +682,19 @@ namespace THE_BUCKETER
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatAppearance.BorderSize = 2;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(681, 444);
+            this.button3.Location = new System.Drawing.Point(683, 455);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 40);
             this.button3.TabIndex = 7;
             this.button3.Text = "Copy all";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // timer1
@@ -684,7 +714,7 @@ namespace THE_BUCKETER
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 525);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "usingApi";
@@ -718,9 +748,6 @@ namespace THE_BUCKETER
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updtaeParamsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateCrendtialsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem theOldest100ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem theOldest200ToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox proxy;
@@ -747,10 +774,12 @@ namespace THE_BUCKETER
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.Timer UpdateCount;
+        private System.Windows.Forms.Label updatedCount;
+        private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.Button minimizeBtn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Bucket;
         private System.Windows.Forms.DataGridViewTextBoxColumn copy;
         private System.Windows.Forms.DataGridViewTextBoxColumn copdrop;
-        private System.Windows.Forms.Timer UpdateCount;
-        private System.Windows.Forms.Label updatedCount;
     }
 }
