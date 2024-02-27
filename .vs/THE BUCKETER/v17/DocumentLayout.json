@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Number.cs",
+              "DocumentMoniker": "C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs",
+              "ToolTip": "C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs [Read Only]",
+              "ViewState": "AQIAAPoCAAAAAAAAAADwvxEDAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T15:24:56.489Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launcher.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\launcher.cs",
+              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs [Design]",
+              "RelativeToolTip": "THE BUCKETER\\launcher.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T20:38:41.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launcher.cs",
+              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\launcher.cs",
+              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
+              "RelativeToolTip": "THE BUCKETER\\launcher.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAkwIEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T20:35:24.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "usingApi.cs",
+              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\usingApi.cs",
+              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "RelativeToolTip": "THE BUCKETER\\usingApi.cs",
+              "ViewState": "AQIAAH4CAAAAAAAAAAApwJkCAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T18:57:50.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "usingApi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\usingApi.cs",
+              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs [Design]",
+              "RelativeToolTip": "THE BUCKETER\\usingApi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T18:47:52.461Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
