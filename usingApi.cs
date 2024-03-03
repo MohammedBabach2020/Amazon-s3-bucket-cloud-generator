@@ -49,10 +49,7 @@ namespace THE_BUCKETER
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (proxy.Text != "")
-            {
-                if (port.Text != "")
-                {
+     
                     if (nchars.Text != "")
                     {
                         if (nBuckets.Text != "")
@@ -82,16 +79,7 @@ namespace THE_BUCKETER
                     {
                         MessageBox.Show("The number of characters is undefined");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("The port is undefined");
-                }
-            }
-            else
-            {
-                MessageBox.Show("The proxy is undefined");
-            }
+           
         }
 
         private string createBucketName()
@@ -113,7 +101,7 @@ namespace THE_BUCKETER
             try
             {
                 string proxyHost = proxy.Text;
-            int proxyPort = Convert.ToInt32(port.Text);
+            int proxyPort = port.Text != ""  ? Convert.ToInt32(port.Text) :0;
             Invoke(new Action(() =>
             {
                 string region = comboBox1.Text;
@@ -329,7 +317,7 @@ namespace THE_BUCKETER
         {
             try
             {
-                if (proxy.Text != "" && port.Text != "" && nchars.Text != "" && nBuckets.Text != "")
+                if (comboBox1.SelectedItem != null && nchars.Text != "" && nBuckets.Text != "" )
                 {
                     using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                     {
@@ -341,6 +329,10 @@ namespace THE_BUCKETER
                         }
                         conn.Close();
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Either the region , the bucket length or the number of buckets is empty ");
                 }
             }
             catch (Exception ex)
@@ -463,6 +455,7 @@ namespace THE_BUCKETER
         private void usingApi_Load(object sender, EventArgs e)
         {
 
+
             Thread onLoad = new Thread(onLoadThreathments);
             onLoad.Start();
 
@@ -474,89 +467,108 @@ namespace THE_BUCKETER
 
         async private void deleteBuckets(int howmuch)
         {
-         
-            string proxyHost = proxy.Text;
-            int proxyPort = Convert.ToInt32(port.Text);
-            Invoke(new Action(() =>
+            try
             {
-                string region = comboBox1.Text;
-            }));
-          
-            var s3Config = new AmazonS3Config
-            {
-                ProxyHost = proxyHost,
-                ProxyPort = proxyPort,
-                RegionEndpoint = RegionEndpoint.GetBySystemName(region)
-            };
+                string proxyHost = proxy.Text;
+                int proxyPort = port.Text != "" ? Convert.ToInt32(port.Text) :0;
+                Invoke(new Action(() =>
+                {
+                    string region = comboBox1.Text;
+                }));
 
-            var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
+                var s3Config = new AmazonS3Config
+                {
+                    ProxyHost = proxyHost,
+                    ProxyPort = proxyPort,
+                    RegionEndpoint = RegionEndpoint.GetBySystemName(region)
+                };
 
-
-
-            ListBucketsResponse listBuckets = await s3Client.ListBucketsAsync();
-
-            // order the buckets by date
-            List<S3Bucket> sortListByDate = listBuckets.Buckets.OrderBy(obj=>obj.CreationDate).ToList();
+                var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
 
 
-            sortListByDate.Reverse();
+
+                ListBucketsResponse listBuckets = await s3Client.ListBucketsAsync();
+
+                // order the buckets by date
+                List<S3Bucket> sortListByDate = listBuckets.Buckets.OrderBy(obj => obj.CreationDate).ToList();
 
 
-            var i = 0;
-            foreach (var bucket in sortListByDate)
-            {
+                sortListByDate.Reverse();
 
 
-                if (i < howmuch)
+                var i = 0;
+                foreach (var bucket in sortListByDate)
                 {
 
 
-                    // Delete all objects in the bucket (empty the bucket first)
-                    await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
 
-                    // Delete the empty bucket
-                    var deleteBucketRequest = new DeleteBucketRequest
+
+                    if (i < howmuch)
                     {
-                        BucketName = bucket.BucketName
-                    };
 
-                    await s3Client.DeleteBucketAsync(deleteBucketRequest);
 
-                    Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
-                    Invoke(new Action(() =>
+                        // Delete all objects in the bucket (empty the bucket first)
+                        await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
+
+                        // Delete the empty bucket
+                        var deleteBucketRequest = new DeleteBucketRequest
+                        {
+                            BucketName = bucket.BucketName
+                        };
+
+                        await s3Client.DeleteBucketAsync(deleteBucketRequest);
+
+                        Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
+                        Invoke(new Action(() =>
+                        {
+                            progressBar1.Value++;
+                        }));
+
+
+
+                        i++;
+                    }
+                    else
                     {
-                        progressBar1.Value++;
-                    }));
+                        break;
+                    }
 
-
-
-                    i++;
                 }
-                else
+
+
+
+                _UpdateCount();
+                Invoke(new Action(() =>
                 {
-                    break;
-                }
+
+                    progressBar1.Value = 0;
+                    progressBar1.Visible = false;
+
+                    MessageBox.Show(howmuch.ToString() + " buckets deletd");
+                    timer1.Stop();
+                    label6.Text = "";
+                }));
+
+
+                t = 0;
+
 
             }
-
-
-
-            _UpdateCount();
-            Invoke(new Action(() =>
+            catch (Exception ex)
             {
-        
-                progressBar1.Value = 0;
-                progressBar1.Visible = false;
-              
-                MessageBox.Show(howmuch.ToString() + " buckets deletd");
-                timer1.Stop();
-                label6.Text = "";
-            }));
+                _UpdateCount();
+                Invoke(new Action(() =>
+                {
 
+                    progressBar1.Value = 0;
+                    progressBar1.Visible = false;
+                    timer1.Stop();
+                    label6.Text = "";
+                }));
+                MessageBox.Show(ex.Message );
+            }
 
-            t = 0;
-      
-
+         
         }
 
 
@@ -751,11 +763,11 @@ namespace THE_BUCKETER
         async private void _UpdateCount()
         {
 
-            if (proxy.Text != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text != "")
+            if (prvKeyText.Text != "" & accessKeyText.Text != "")
             {
 
                 string proxyHost = proxy.Text;
-                int proxyPort = Convert.ToInt32(port.Text);
+                int proxyPort = port.Text != "" ? Convert.ToInt32(port.Text) : 0;
 
                 try
                 {
