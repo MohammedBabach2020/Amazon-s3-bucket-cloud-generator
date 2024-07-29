@@ -72,8 +72,9 @@ namespace THE_BUCKETER
             this.updtaeParamsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateCrendtialsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteBy100 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteBy200 = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteByNames = new System.Windows.Forms.ToolStripMenuItem();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -170,6 +171,7 @@ namespace THE_BUCKETER
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1311, 525);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // minimizeBtn
@@ -320,7 +322,6 @@ namespace THE_BUCKETER
             this.bucketsList.TabIndex = 68;
             this.bucketsList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bucketsList_CellClick_1);
             this.bucketsList.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.bucketsList_DefaultValuesNeeded);
-            this.bucketsList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bucketsList_MouseDown);
             // 
             // Bucket
             // 
@@ -580,8 +581,9 @@ namespace THE_BUCKETER
             // 
             this.toolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.deleteBy100,
+            this.deleteBy200,
+            this.deleteByNames});
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -593,21 +595,29 @@ namespace THE_BUCKETER
             this.toolStripMenuItem1.DropDownClosed += new System.EventHandler(this.toolStripMenuItem1_DropDownClosed);
             this.toolStripMenuItem1.DropDownOpened += new System.EventHandler(this.toolStripMenuItem1_DropDownOpened);
             // 
-            // toolStripMenuItem2
+            // deleteBy100
             // 
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.White;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(171, 24);
-            this.toolStripMenuItem2.Text = "The oldest 100";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            this.deleteBy100.BackColor = System.Drawing.Color.White;
+            this.deleteBy100.Name = "deleteBy100";
+            this.deleteBy100.Size = new System.Drawing.Size(171, 24);
+            this.deleteBy100.Text = "The oldest 100";
+            this.deleteBy100.Click += new System.EventHandler(this.deleteBy100_Click);
             // 
-            // toolStripMenuItem3
+            // deleteBy200
             // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.White;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(171, 24);
-            this.toolStripMenuItem3.Text = "The oldest 200";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            this.deleteBy200.BackColor = System.Drawing.Color.White;
+            this.deleteBy200.Name = "deleteBy200";
+            this.deleteBy200.Size = new System.Drawing.Size(171, 24);
+            this.deleteBy200.Text = "The oldest 200";
+            this.deleteBy200.Click += new System.EventHandler(this.deleteBy200_Click);
+            // 
+            // deleteByNames
+            // 
+            this.deleteByNames.BackColor = System.Drawing.Color.White;
+            this.deleteByNames.Name = "deleteByNames";
+            this.deleteByNames.Size = new System.Drawing.Size(171, 24);
+            this.deleteByNames.Text = "With names";
+            this.deleteByNames.Click += new System.EventHandler(this.deleteByNames_Click);
             // 
             // label9
             // 
@@ -618,7 +628,6 @@ namespace THE_BUCKETER
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 59;
-            this.label9.Click += new System.EventHandler(this.ZZ);
             // 
             // label4
             // 
@@ -772,8 +781,8 @@ namespace THE_BUCKETER
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem deleteBy100;
+        private System.Windows.Forms.ToolStripMenuItem deleteBy200;
         private System.Windows.Forms.Timer UpdateCount;
         private System.Windows.Forms.Label updatedCount;
         private System.Windows.Forms.Button closeBtn;
@@ -781,5 +790,6 @@ namespace THE_BUCKETER
         private System.Windows.Forms.DataGridViewTextBoxColumn Bucket;
         private System.Windows.Forms.DataGridViewTextBoxColumn copy;
         private System.Windows.Forms.DataGridViewTextBoxColumn copdrop;
+        private System.Windows.Forms.ToolStripMenuItem deleteByNames;
     }
 }

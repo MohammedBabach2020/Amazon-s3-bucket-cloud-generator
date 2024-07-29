@@ -20,8 +20,7 @@ namespace THE_BUCKETER
 {
     public partial class usingApi : Form
     {
-        private string accessKey = "AKIA4AEZBICFAZYRXIG4";
-        private string secretKey = "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";
+
         private string[] files = new string[10];
         private int len = 0;
         private string region ="";
@@ -47,12 +46,11 @@ namespace THE_BUCKETER
             InitializeComponent();
         }
 
+
+      
         private void button1_Click(object sender, EventArgs e)
         {
-            if (proxy.Text != "")
-            {
-                if (port.Text != "")
-                {
+     
                     if (nchars.Text != "")
                     {
                         if (nBuckets.Text != "")
@@ -82,16 +80,7 @@ namespace THE_BUCKETER
                     {
                         MessageBox.Show("The number of characters is undefined");
                     }
-                }
-                else
-                {
-                    MessageBox.Show("The port is undefined");
-                }
-            }
-            else
-            {
-                MessageBox.Show("The proxy is undefined");
-            }
+           
         }
 
         private string createBucketName()
@@ -113,10 +102,11 @@ namespace THE_BUCKETER
             try
             {
                 string proxyHost = proxy.Text;
-            int proxyPort = Convert.ToInt32(port.Text);
-            Invoke(new Action(() =>
+            int proxyPort = port.Text != ""  ? Convert.ToInt32(port.Text) :0;
+            
+                Invoke(new Action(() =>
             {
-                string region = comboBox1.Text;
+                region = comboBox1.Text;
             }));
         
             var s3Config = new AmazonS3Config
@@ -296,7 +286,7 @@ namespace THE_BUCKETER
          
             for (int i = 0; i < bucketsList.Rows.Count;i++)
             {
-                str = str + bucketsList.Rows[i].Cells[0].Value.ToString() + "\n";
+                str = str + bucketsList.Rows[i].Cells[0].Value.ToString() + Environment.NewLine;
             }
 
             Clipboard.SetText(str);
@@ -329,7 +319,7 @@ namespace THE_BUCKETER
         {
             try
             {
-                if (proxy.Text != "" && port.Text != "" && nchars.Text != "" && nBuckets.Text != "")
+                if (comboBox1.SelectedItem != null && nchars.Text != "" && nBuckets.Text != "" )
                 {
                     using (SQLiteConnection conn = new SQLiteConnection(connectionString))
                     {
@@ -341,6 +331,10 @@ namespace THE_BUCKETER
                         }
                         conn.Close();
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Either the region , the bucket length or the number of buckets is empty ");
                 }
             }
             catch (Exception ex)
@@ -462,118 +456,199 @@ namespace THE_BUCKETER
 
         private void usingApi_Load(object sender, EventArgs e)
         {
-
+            
             Thread onLoad = new Thread(onLoadThreathments);
             onLoad.Start();
 
-
-
         }
 
-    
 
-        async private void deleteBuckets(int howmuch)
+        private void _refresh()
         {
-         
-            string proxyHost = proxy.Text;
-            int proxyPort = Convert.ToInt32(port.Text);
-            Invoke(new Action(() =>
-            {
-                string region = comboBox1.Text;
-            }));
-          
-            var s3Config = new AmazonS3Config
-            {
-                ProxyHost = proxyHost,
-                ProxyPort = proxyPort,
-                RegionEndpoint = RegionEndpoint.GetBySystemName(region)
-            };
-
-            var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
-
-
-
-            ListBucketsResponse listBuckets = await s3Client.ListBucketsAsync();
-
-            // order the buckets by date
-            List<S3Bucket> sortListByDate = listBuckets.Buckets.OrderBy(obj=>obj.CreationDate).ToList();
-
-
-            sortListByDate.Reverse();
-
-
-            var i = 0;
-            foreach (var bucket in sortListByDate)
-            {
-
-
-                if (i < howmuch)
-                {
-
-
-                    // Delete all objects in the bucket (empty the bucket first)
-                    await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
-
-                    // Delete the empty bucket
-                    var deleteBucketRequest = new DeleteBucketRequest
-                    {
-                        BucketName = bucket.BucketName
-                    };
-
-                    await s3Client.DeleteBucketAsync(deleteBucketRequest);
-
-                    Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
-                    Invoke(new Action(() =>
-                    {
-                        progressBar1.Value++;
-                    }));
-
-
-
-                    i++;
-                }
-                else
-                {
-                    break;
-                }
-
-            }
-
-
 
             _UpdateCount();
             Invoke(new Action(() =>
             {
-        
+
                 progressBar1.Value = 0;
                 progressBar1.Visible = false;
-              
-                MessageBox.Show(howmuch.ToString() + " buckets deletd");
+
                 timer1.Stop();
                 label6.Text = "";
             }));
 
 
             t = 0;
-      
-
         }
 
 
-        private void theOldest100ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-       
-        }
 
-         private void theOldest200ToolStripMenuItem_Click(object sender, EventArgs e)
+
+        public static bool allowDelete = false  ;
+
+        public static List<string> BucketsNamesToDelete = new List<string>();
+
+        async private void deleteBucketsByNames()
         {
-            progressBar1.Visible = true;
-            progressBar1.Maximum = 200;
-            Thread th = new Thread(() => { deleteBuckets(200); });
-            th.Start();
-            timer1.Start();
+            try
+            {
+                string proxyHost = proxy.Text;
+                int proxyPort = port.Text != "" ? Convert.ToInt32(port.Text) : 0;
+
+                Invoke(new Action(() => {
+
+                    string region = comboBox1.Text;
+                }));
+             
+
+
+                var s3Config = new AmazonS3Config
+                {
+                    ProxyHost = proxyHost,
+                    ProxyPort = proxyPort,
+                    RegionEndpoint = RegionEndpoint.GetBySystemName(region)
+                };
+
+                var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
+         
             
+
+
+                DeleteWIthNames dwn = new DeleteWIthNames();
+                dwn.ShowDialog();
+
+                if (allowDelete == true)
+                {
+                    Invoke(new Action(() => {
+                        progressBar1.Maximum =BucketsNamesToDelete.Count;
+                    }));
+                    allowDelete = false;
+                    foreach (var bucket in BucketsNamesToDelete)
+                    {
+                        try
+                        {
+                            // Delete all objects in the bucket (empty the bucket first)
+                            await DeleteAllObjectsInBucketAsync(s3Client, bucket);
+                            // Delete the empty bucket
+                            var deleteBucketRequest = new DeleteBucketRequest
+                            {
+                                BucketName = bucket
+                            };
+
+                            await s3Client.DeleteBucketAsync(deleteBucketRequest);
+
+                            Console.WriteLine($"Bucket '{bucket}' deleted successfully.");
+                            Invoke(new Action(() =>
+                            {
+                                progressBar1.Value++;
+                            }));
+                        }
+                        catch (AmazonS3Exception ex)
+                        {
+                            MessageBox.Show($"Bucket '{bucket}' May not be  found.");
+                        }
+                     
+                    }
+
+                    BucketsNamesToDelete.Clear();
+                }
+
+                _refresh();
+
+                }
+
+          
+
+            catch (Exception ex)
+            {
+                _refresh();
+                MessageBox.Show(ex.Message); 
+
+
+            }
         }
+
+            async private void deleteBucketsByCount(int howmuch)
+        {
+            try
+            {
+              
+                string proxyHost = proxy.Text;
+                int proxyPort = port.Text != "" ? Convert.ToInt32(port.Text) :0;
+            
+                Invoke(new Action(() =>
+                {
+                    string region = comboBox1.Text;
+                }));
+
+                var s3Config = new AmazonS3Config
+                {
+                    ProxyHost = proxyHost,
+                    ProxyPort = proxyPort,
+                    RegionEndpoint = RegionEndpoint.GetBySystemName(region)
+                };
+
+
+                var s3Client = new AmazonS3Client(accessKeyText.Text, prvKeyText.Text, s3Config);
+
+
+
+                ListBucketsResponse listBuckets = await s3Client.ListBucketsAsync();
+
+                // order the buckets by date
+                List<S3Bucket> sortListByDate = listBuckets.Buckets.OrderBy(obj => obj.CreationDate).ToList().GetRange(0,howmuch);
+
+
+                DataTable dataTable =  Newtonsoft.Json.JsonConvert.DeserializeObject<DataTable>(Newtonsoft.Json.JsonConvert.SerializeObject(sortListByDate));
+             
+              
+                ListBucketsToDelete lbts = new ListBucketsToDelete();
+                lbts.ListView.DataSource = dataTable;
+                lbts.ShowDialog();
+
+                if (allowDelete == true)
+                {
+                    allowDelete = false;
+
+           
+                    foreach (var bucket in sortListByDate)
+                    {
+                        //Delete all objects in the bucket (empty the bucket first)
+                          await DeleteAllObjectsInBucketAsync(s3Client, bucket.BucketName);
+                       // Delete the empty bucket
+                               var deleteBucketRequest = new DeleteBucketRequest
+                               {
+                                   BucketName = bucket.BucketName
+                               };
+
+                        await s3Client.DeleteBucketAsync(deleteBucketRequest);
+
+                        Console.WriteLine($"Bucket '{bucket.BucketName}' deleted successfully.");
+                        Invoke(new Action(() =>
+                        {
+                            progressBar1.Value++;
+                        }));
+
+
+                    }
+                    _refresh();
+                }
+                else
+                {
+                    _refresh();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                _refresh();
+                MessageBox.Show(ex.Message );
+            }
+
+         
+        }
+
 
         private void bucketsList_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
@@ -672,10 +747,7 @@ namespace THE_BUCKETER
             }
         }
 
-        private void ZZ(object sender, EventArgs e)
-        {
-
-        }
+     
 
         int t = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -684,10 +756,7 @@ namespace THE_BUCKETER
             label6.Text = t.ToString() + " s";
         }
 
-        private void deleteBucketsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -716,46 +785,53 @@ namespace THE_BUCKETER
 
         }
 
-        private void backToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-         
-        }
+     
 
         private void usingApi_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        private void deleteBy100_Click(object sender, EventArgs e)
         {
             progressBar1.Visible = true;
             progressBar1.Maximum = 100;
-            Thread th = new Thread(() => { deleteBuckets(100); });
+            Thread th = new Thread(() => { deleteBucketsByCount(100); });
             th.Start();
             timer1.Start();
           
         }
 
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        private void deleteBy200_Click(object sender, EventArgs e)
         {
             progressBar1.Visible = true;
             progressBar1.Maximum = 200;
-            Thread th = new Thread(() => { deleteBuckets(200); });
+            Thread th = new Thread(() => { deleteBucketsByCount(200); });
             th.Start();
             timer1.Start();
          
         }
 
 
+        private void deleteByNames_Click(object sender, EventArgs e)
+        {
+            progressBar1.Visible = true;
+        
+            Thread th = new Thread(() => {deleteBucketsByNames(); });
+           
+            th.Start();
+            timer1.Start();
+        }
+
 
         async private void _UpdateCount()
         {
 
-            if (proxy.Text != "" && port.Text != "" && prvKeyText.Text != "" & accessKeyText.Text != "")
+            if (prvKeyText.Text != "" & accessKeyText.Text != "")
             {
 
                 string proxyHost = proxy.Text;
-                int proxyPort = Convert.ToInt32(port.Text);
+                int proxyPort = port.Text != "" ? Convert.ToInt32(port.Text) : 0;
 
                 try
                 {
@@ -784,10 +860,7 @@ namespace THE_BUCKETER
         }
        async private void UpdateCount_Tick(object sender, EventArgs e)
         {
-
-
             _UpdateCount();
-
         }
 
         private void settingsToolStripMenuItem_DropDownOpened(object sender, EventArgs e)
@@ -821,20 +894,11 @@ namespace THE_BUCKETER
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void toolStripMenuItem5_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This app has been made by Mohammed Babach - DMS\n Digital Marketing Strategies.");
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -849,9 +913,10 @@ namespace THE_BUCKETER
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void bucketsList_MouseDown(object sender, MouseEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-           
+
+
         }
     }
 }

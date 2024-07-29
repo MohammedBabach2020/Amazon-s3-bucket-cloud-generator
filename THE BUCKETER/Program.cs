@@ -13,7 +13,7 @@ namespace THE_BUCKETER
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new launcher());
+            Application.Run(new usingApi());
         }
     }
 }

@@ -1,25 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\",
+  "WorkspaceRootPath": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\the bucketer\\deletewithnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\deletewithnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\the bucketer\\deletewithnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\deletewithnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\usingapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|THE BUCKETER||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\babach\\desktop\\the bucketer - only api\\the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\launcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\the bucketer\\deletewithnames.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|solutionrelative:the bucketer\\deletewithnames.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE16C8B-1CA4-4B55-AB3F-EE282EB12306}|THE BUCKETER\\THE BUCKETER.csproj|c:\\users\\teamc\\desktop\\the bucketer - only api\\the bucketer\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|cc4014f5-b18d-439c-9352-f99d984cca85"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,66 +36,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Number.cs",
-              "DocumentMoniker": "C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs",
-              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs",
-              "ToolTip": "C:\\Users\\babach\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\AppData\\Local\\Temp\\3\\.vsdbgsrc\\fd45ca29af774424f5dcb162587a2ca00f82cad5053040371b74bcbd133194fc\\Number.cs [Read Only]",
-              "ViewState": "AQIAAPoCAAAAAAAAAADwvxEDAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T15:24:56.489Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launcher.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
-              "RelativeDocumentMoniker": "THE BUCKETER\\launcher.cs",
-              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs [Design]",
-              "RelativeToolTip": "THE BUCKETER\\launcher.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T20:38:41.605Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "launcher.cs",
-              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
-              "RelativeDocumentMoniker": "THE BUCKETER\\launcher.cs",
-              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\launcher.cs",
-              "RelativeToolTip": "THE BUCKETER\\launcher.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAkwIEAAAA3AAAA",
+              "Title": "THE BUCKETER",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\THE BUCKETER.csproj",
+              "RelativeDocumentMoniker": "THE BUCKETER\\THE BUCKETER.csproj",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\THE BUCKETER.csproj",
+              "RelativeToolTip": "THE BUCKETER\\THE BUCKETER.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-29T15:18:50.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteWIthNames.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.Designer.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\DeleteWIthNames.Designer.cs",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.Designer.cs",
+              "RelativeToolTip": "THE BUCKETER\\DeleteWIthNames.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T20:35:24.861Z",
+              "WhenOpened": "2024-03-20T18:12:53.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DeleteWIthNames.cs",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\DeleteWIthNames.cs",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.cs",
+              "RelativeToolTip": "THE BUCKETER\\DeleteWIthNames.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAqwEoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:47:42.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteWIthNames.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.cs",
+              "RelativeDocumentMoniker": "THE BUCKETER\\DeleteWIthNames.cs",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\DeleteWIthNames.cs [Design]",
+              "RelativeToolTip": "THE BUCKETER\\DeleteWIthNames.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T23:42:22.534Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "usingApi.cs",
-              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
               "RelativeDocumentMoniker": "THE BUCKETER\\usingApi.cs",
-              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
               "RelativeToolTip": "THE BUCKETER\\usingApi.cs",
-              "ViewState": "AQIAAH4CAAAAAAAAAAApwJkCAAAjAAAA",
+              "ViewState": "AQIAABgCAAAAAAAAAAAqwOgBAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T18:57:50.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "usingApi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
+              "DocumentMoniker": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs",
               "RelativeDocumentMoniker": "THE BUCKETER\\usingApi.cs",
-              "ToolTip": "C:\\Users\\babach\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs [Design]",
+              "ToolTip": "C:\\Users\\teamc\\Desktop\\THE BUCKETER - only api\\THE BUCKETER\\usingApi.cs [Design]",
               "RelativeToolTip": "THE BUCKETER\\usingApi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-26T18:47:52.461Z",

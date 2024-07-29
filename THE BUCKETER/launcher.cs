@@ -42,20 +42,7 @@ namespace THE_BUCKETER
         private void launcher_Load(object sender, EventArgs e)
         {
 
-            button1.Location = new Point(330,330);
-
-            //th1 = new Thread(changeThe_B_Location);
-            //pictureBox1.Location = new Point(pictureBox1.Location.X, -217);
-            //th2 = new Thread(changeThe_smile_Location);
-            //th2.Start();
-
-            //if (!th2.IsAlive)
-            //{
-            //    th1.Start();
-
-
-            //}
-
+      
 
         }
 

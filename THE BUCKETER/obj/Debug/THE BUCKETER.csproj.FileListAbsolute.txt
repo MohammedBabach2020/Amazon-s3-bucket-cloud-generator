@@ -181,3 +181,67 @@ C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKE
 C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCK.027780AA.Up2Date
 C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.exe
 C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.pdb
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.ListBucketsToDelete.resources
+C:\Users\babach\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.DeleteWIthNames.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\Interop.MSVidCtlLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\Interop.WMPLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\THE BUCKETER.exe.config
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\THE BUCKETER.exe.manifest
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\THE BUCKETER.application
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\THE BUCKETER.exe
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\THE BUCKETER.pdb
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.Core.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.S3.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\EntityFramework.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\Newtonsoft.Json.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Buffers.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Data.SQLite.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Drawing.Common.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Memory.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.AccessControl.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.Permissions.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.Core.pdb
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.Core.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.S3.pdb
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AWSSDK.S3.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\EntityFramework.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\Newtonsoft.Json.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Buffers.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Data.SQLite.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Drawing.Common.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Memory.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.AccessControl.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.Permissions.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\Interop.MSVidCtlLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\Interop.WMPLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.AssemblyReference.cache
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\AxInterop.MSVidCtlLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.ResolveComReference.cache
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.DeleteWIthNames.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.launcher.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.ListBucketsToDelete.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.Properties.Resources.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE_BUCKETER.usingApi.resources
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.GenerateResource.cache
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.csproj.CoreCompileInputs.cache
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.exe.manifest
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.application
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCK.027780AA.Up2Date
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.exe
+C:\Users\teamc\Desktop\THE BUCKETER - only api\THE BUCKETER\obj\Debug\THE BUCKETER.pdb
